@@ -55,8 +55,7 @@ entries:
     sources:
     - https://gerrit.o-ran-sc.org/r/#/admin/projects/
     urls:
-    - charts/nearrtric-0.1.0.tgz
+    - nearrtric-0.1.0.tgz
     version: 0.1.0
 generated: "2024-02-06T17:07:56+02:00"
-serverInfo:
-  contextPath: /charts
+
