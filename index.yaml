@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   nearrtric:
   - apiVersion: v2
-    created: "2024-02-06T17:04:29.366838028+02:00"
+    created: "2024-02-07T10:42:19.952074934+02:00"
     dependencies:
     - name: appmgr
       repository: '@local'
@@ -46,9 +46,13 @@ entries:
       name: xapp-onboarder
       repository: '@local'
       version: ~0.x
+    - condition: nearrtric.installInfluxDB
+      name: influxdb2
+      repository: '@influxdata'
+      version: ~2.1.0
     description: Umbrella Helm Chart for NearRT RAN Intelligent Controller from O-RAN
       SC.
-    digest: 2a3807607f1b0c425e4cde8155a5cf5e404cdfffb0a5d0f4cbca3de9400c9322
+    digest: 99ef34a2217b201af3deaecb6260f3967d728afb276c4b19c6afb0c3b1d41c44
     home: https://wiki.o-ran-sc.org/pages/viewpage.action?pageId=1179659
     kubeVersion: ' >= 1.22'
     name: nearrtric
@@ -57,5 +61,5 @@ entries:
     urls:
     - nearrtric-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-06T17:07:56+02:00"
-
+generated: "2024-02-07T10:42:20+02:00"
+serverInfo: {}
