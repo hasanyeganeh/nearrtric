@@ -1,0 +1,62 @@
+apiVersion: v1
+entries:
+  nearrtric:
+  - apiVersion: v2
+    created: "2024-02-06T17:04:29.366838028+02:00"
+    dependencies:
+    - name: appmgr
+      repository: '@local'
+      version: ~0.x
+    - name: dbaas
+      repository: '@local'
+      version: ~0.x
+    - name: e2mgr
+      repository: '@local'
+      version: ~0.x
+    - name: e2term
+      repository: '@local'
+      version: ~0.x
+    - name: submgr
+      repository: '@local'
+      version: ~0.x
+    - name: rtmgr
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installA1Mediator
+      name: a1mediator
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installAlarmManager
+      name: alarmmanager
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installJaegerAdapter
+      name: jaegeradapter
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installO1Mediator
+      name: o1mediator
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installVespamgr
+      name: vespamgr
+      repository: '@local'
+      version: ~0.x
+    - condition: nearrtric.installXappOnboarder
+      name: xapp-onboarder
+      repository: '@local'
+      version: ~0.x
+    description: Umbrella Helm Chart for NearRT RAN Intelligent Controller from O-RAN
+      SC.
+    digest: 2a3807607f1b0c425e4cde8155a5cf5e404cdfffb0a5d0f4cbca3de9400c9322
+    home: https://wiki.o-ran-sc.org/pages/viewpage.action?pageId=1179659
+    kubeVersion: ' >= 1.22'
+    name: nearrtric
+    sources:
+    - https://gerrit.o-ran-sc.org/r/#/admin/projects/
+    urls:
+    - charts/nearrtric-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-02-06T17:07:56+02:00"
+serverInfo:
+  contextPath: /charts
